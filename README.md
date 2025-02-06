@@ -1,12 +1,10 @@
 
-# Proyecto Social Link
+# Social Link Project
 
 ## Descripción General
-
 El **Proyecto Social Link** es una aplicación web full-stack que permite a los usuarios gestionar y compartir sus enlaces de redes sociales a través de un panel de control personalizado. Los usuarios pueden registrarse, iniciar sesión, personalizar sus perfiles, subir imágenes de perfil y agregar/editar sus enlaces de redes sociales. El frontend está construido con React y Vite, mientras que el backend utiliza Node.js, Express y MySQL.
 
-## Características
-
+## Características Principales
 - **Autenticación de Usuarios**: Registro e inicio de sesión seguro con autenticación basada en JWT.
 - **Gestión de Perfiles**: Los usuarios pueden actualizar su información de perfil, incluidos temas e imágenes de perfil.
 - **Gestión de Enlaces de Redes Sociales**: Agregar, editar y eliminar enlaces de redes sociales.
@@ -34,7 +32,6 @@ El **Proyecto Social Link** es una aplicación web full-stack que permite a los 
 ## Instalación y Configuración
 
 ### Requisitos Previos
-
 - **Node.js** (v18 o superior)
 - **npm** o **yarn**
 - **MySQL** instalado y en ejecución
@@ -48,7 +45,11 @@ El **Proyecto Social Link** es una aplicación web full-stack que permite a los 
    cd social-link-project
    ```
 
-2. **Configura el Backend**:
+2. **Configura la Base de Datos**:
+   - Asegúrate de que MySQL esté en ejecución y crea una base de datos llamada `social_link_db`.
+   - Actualiza el archivo `.env` con tus credenciales de la base de datos.
+
+3. **Configura el Backend**:
    - Navega al directorio `social-link-project`:
      ```bash
      cd social-link-project
@@ -72,7 +73,7 @@ El **Proyecto Social Link** es una aplicación web full-stack que permite a los 
      npm start
      ```
 
-3. **Configura el Frontend**:
+4. **Configura el Frontend**:
    - Navega al directorio `client`:
      ```bash
      cd client
@@ -86,17 +87,11 @@ El **Proyecto Social Link** es una aplicación web full-stack que permite a los 
      npm run dev
      ```
 
-4. **Configuración de la Base de Datos**:
-   - Asegúrate de que MySQL esté en ejecución y crea una base de datos llamada `social_link_db`.
-   - Actualiza el archivo `.env` con tus credenciales de la base de datos.
-   - Ejecuta cualquier migración o semilla si se proporciona.
-
 5. **Accede a la Aplicación**:
    - Abre tu navegador y navega a `http://localhost:3000` para acceder al frontend.
    - El backend estará disponible en `http://localhost:5000`.
 
 ## Estructura de Carpetas
-
 ```
 social-link-project/
 ├── client/                # Aplicación React del frontend
@@ -135,7 +130,6 @@ social-link-project/
 
 ### Vista Previa
 Puedes explorar cómo se ve la aplicación antes de instalarla localmente. La interfaz de usuario es limpia y moderna, diseñada para ser intuitiva tanto para usuarios novatos como avanzados. Algunas capturas de pantalla clave incluyen:
-
 - **Página de Inicio de Sesión**: Un formulario minimalista donde los usuarios pueden iniciar sesión con su correo electrónico y contraseña.
 ![Vista de Login y Registro](./logregviews.png)
 - **Panel de Control**: Una vez que los usuarios inician sesión, pueden ver y gestionar sus enlaces de redes sociales, actualizar su imagen de perfil y personalizar el tema.
@@ -145,14 +139,12 @@ Puedes explorar cómo se ve la aplicación antes de instalarla localmente. La in
 
 ### Demo en Línea
 Si deseas probar la aplicación sin configurarla localmente, puedes acceder a la **demo en línea** alojada en la siguiente URL:
-
 - **Frontend**: [https://test.nexwey.online/social-link/](https://test.nexwey.online/social-link/)
 - **Backend**: [https://social-link-api.onrender.com/](https://social-link-api.onrender.com/) *(Nota: Si estás utilizando la demo en línea, el backend estará configurado automáticamente).*
 
-> **Nota**: La demo en línea puede tener limitaciones en comparación con la versión local, como restricciones en la creación de cuentas o la carga de imágenes debido a que el backend se encuentra en [Render](https://render.com/)
+> **Nota**: La demo en línea puede tener limitaciones en comparación con la versión local, como restricciones en la creación de cuentas o la carga de imágenes debido a que el backend se encuentra en [Render](https://render.com/).
 
 ## Contribuciones
-
 ¡Las contribuciones son bienvenidas! Por favor, sigue estos pasos:
 1. Haz un fork del repositorio.
 2. Crea una nueva rama (`git checkout -b feature/YourFeatureName`).
@@ -161,7 +153,4 @@ Si deseas probar la aplicación sin configurarla localmente, puedes acceder a la
 5. Abre una solicitud de pull.
 
 ## Licencia
-
 Este proyecto está bajo la licencia **ISC**.
-
----
